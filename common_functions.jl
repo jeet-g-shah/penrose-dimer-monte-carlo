@@ -187,7 +187,12 @@ function plot_config(p, config, size = 1000, annotate = false)
     return p
 end
 
-
+function plot_sz(p, g, sz)
+    x = real(g.pts)
+    y = imag(g.pts)
+    scatter!(p, x,y, zcolor=sz, label="", linewidth=0)
+    return p
+end
 
 function plot_sub_lat_edges(p)
     for i in 1:length(sub_lat)-1
