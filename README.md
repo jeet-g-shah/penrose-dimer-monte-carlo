@@ -5,7 +5,7 @@ Monte Carlo code to calculate correlators of a quantum monomer-dimer model on th
 
 First, clone this repository and extract the data.zip file. 
 
-There are three parts to the code:
+There are four parts to the code:
 
 1. Generate the Penrose tiling using lattice_generation.ipynb, and save all the requried information about the graph such as the location of the vertices and the adjacency matrix. This data has been already generated and stored in ./data/tiling_input
 
@@ -13,4 +13,4 @@ There are three parts to the code:
 
 3. Next, we use the data from these folders to analyze the data (perform path averaging and other post-processing) using data-analysis.ipynb. The analyzed data is stored in ./data/plot_data
 
-4. Finally, ./data/plot_data is used by ./plot.ipynb to generate the plots included in the paper.
+4. Finally, ./data/plot_data is used by ./plot.ipynb to generate the plots included in the paper, which are saved in ./images/paper/.
