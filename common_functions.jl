@@ -651,38 +651,6 @@ function get_connected_corr(sz, szsz, spin_origin)
     return abs.(szsz .- sz[spin_origin] .* sz)
 end
 
-# ---------------------- AUTO CORRELATION STUFF ---------------------
-# nchanges = 0
-# for i in 1:MC_steps-1
-#     if s0_array[i]*s0_array[i+1] < 0
-#         nchanges += 1
-#         #println(i)
-#     end
-# end
-# println("1 change every ", MC_steps/nchanges)
-
-# function acf(dt , s0_array)
-#     ar1 = copy(s0_array[1:end-dt])
-#     ar2 = copy(s0_array[dt+1:end])
-    
-#     return (dot(ar1, ar2)/length(ar1)-mean(ar1)*mean(ar2))/(mean(s0_array.^2) - mean(s0_array)^2)
-# end
-
-# ti = 1:1000
-# y = []
-# for dt in ti
-#     push!(y,acf(dt,s0_array))
-# end
-
-# model(t, p) = p[1] * exp.(-p[2] * t)
-# p0 = [1,0.002]
-# fit = curve_fit(model, ti, y, p0)
-
-# p = plot(ti,y)
-# plot!(p, ti, model(ti,fit.param), label="exponential fit")
-# display(p)
-# println("corrrelation time from the fit: ", 1/fit.param[2])
-# -----------------------------------------------------------------------
 
 function get_sub_neighbors(g)
     adj = g.adj
