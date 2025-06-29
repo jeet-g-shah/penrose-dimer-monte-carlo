@@ -3,4 +3,4 @@ data/*
 !data/tiling_input.zip
 !data/plot_data.zip
 !data/R3_mc.zip
-!data/R2_mc/*
+!data/R2_mc/
