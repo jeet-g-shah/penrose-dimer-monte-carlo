@@ -3,7 +3,7 @@ Monte Carlo code to calculate correlators of a quantum monomer-dimer model on th
 
 # Getting started
 
-First, clone this repository and extract the data.zip file. 
+First, clone this repository and extract all the .zip files in the ./data folder. 
 
 There are four parts to the code:
 
