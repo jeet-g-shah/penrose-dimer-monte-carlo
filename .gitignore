@@ -2,3 +2,4 @@ data/*
 .DS_Store
 !data/tiling_input.zip
 !data/plot_data.zip
+!data/R3_mc.zip
